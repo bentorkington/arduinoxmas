@@ -4,13 +4,11 @@
    by Ben Torkington <ben@torkington.com>
 
    16 December 2016
-
-   
 */
 
 // change the following two lines to match the number of LEDs you have connected
-#define PINMIN 3      // the first pin with an LED connected
-#define PINMAX 13     // the last pin with an LED connected
+#define PINMIN 2      // the first pin with an LED connected
+#define PINMAX 12     // the last pin with an LED connected
 
 // the setup function runs once when you press reset or power the board
 void setup() {
@@ -48,11 +46,11 @@ void allRed(int value) {
   digitalWrite(7, value);
   digitalWrite(9, value);
   digitalWrite(11, value);
-  digitalWrite(13, value);
 }
 
 // set all of the Green LEDs at once, either HIGH or LOW
 void allGreen(int value) {
+  digitalWrite(2, value);
   digitalWrite(4, value);
   digitalWrite(6, value);
   digitalWrite(8, value);
@@ -160,5 +158,3 @@ void loop() {
   // now we start all over again!
   // Merry Christmas!
 }
-
-
