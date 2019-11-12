@@ -115,6 +115,11 @@ void glimmer()
 // This where you should start experimenting!
 
 void loop() {
+   allOn();
+   delay(5000);
+   allOff();
+
+  
   for (int i=0; i<3; ++i)   // flash between green and red three times
   {
     // first we turn on all the red LEDs, and wait a second
