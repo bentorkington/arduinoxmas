@@ -6,6 +6,8 @@
    16 December 2016
 */
 
+#include <Arduino.h>
+
 // change the following two lines to match the number of LEDs you have connected
 #define PINMIN 2      // the first pin with an LED connected
 #define PINMAX 12     // the last pin with an LED connected
