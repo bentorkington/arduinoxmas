@@ -101,13 +101,14 @@ void glimmer()
   for(int i=0; i<1024; ++i)
   {
     float theta = i * PI / 32;
+    const float halfBright = 255.0 / 2;
     
-    analogWrite(3, (cos(theta + offsets[0]) + 1) * 128);
-    analogWrite(5, (cos(theta + offsets[1]) + 1) * 128);
-    analogWrite(6, (cos(theta + offsets[2]) + 1) * 128);
-    analogWrite(9, (cos(theta + offsets[3]) + 1) * 128);
-    analogWrite(10, (cos(theta + offsets[4]) + 1) * 128);
-    analogWrite(11, (cos(theta + offsets[5]) + 1) * 128);
+    analogWrite(3, (cos(theta + offsets[0]) + 1) * halfBright);
+    analogWrite(5, (cos(theta + offsets[1]) + 1) * halfBright);
+    analogWrite(6, (cos(theta + offsets[2]) + 1) * halfBright);
+    analogWrite(9, (cos(theta + offsets[3]) + 1) * halfBright);
+    analogWrite(10, (cos(theta + offsets[4]) + 1) * halfBright);
+    analogWrite(11, (cos(theta + offsets[5]) + 1) * halfBright);
 
     delay(10);
   }  
